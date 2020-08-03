@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let k = "dd"
-        print(k)
+        let test = "dd"
+        print(test)
         
         
     }
