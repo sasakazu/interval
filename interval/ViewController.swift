@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var setName: UILabel!
+    @IBOutlet weak var interval: UILabel!
+    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        let test = "dd"
-        print(test)
-        
         
     }
-
+    
+    
+    
+    @IBAction func start(_ sender: Any) {
+    }
+    
 
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		7381D4B624D8245D003C004F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7381D4B424D8245D003C004F /* LaunchScreen.storyboard */; };
 		7381D4C124D8245D003C004F /* intervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4C024D8245D003C004F /* intervalTests.swift */; };
 		7381D4CC24D8245D003C004F /* intervalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4CB24D8245D003C004F /* intervalUITests.swift */; };
+		7381D4DA24E14909003C004F /* addSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4D924E14909003C004F /* addSet.swift */; };
 		922AD1512AFD62E91417380E /* Pods_interval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEDC38E69CD10CB5576B6EE /* Pods_interval.framework */; };
 		C9472551C480BF7F735F14B8 /* Pods_intervalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A04EF46EC9AED72A24EC221 /* Pods_intervalTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		7381D4C724D8245D003C004F /* intervalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intervalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7381D4CB24D8245D003C004F /* intervalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervalUITests.swift; sourceTree = "<group>"; };
 		7381D4CD24D8245D003C004F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7381D4D924E14909003C004F /* addSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSet.swift; sourceTree = "<group>"; };
 		D9A8C52532B3556881710970 /* Pods_interval_intervalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interval_intervalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF53FA5575B27EF32F662775 /* Pods-interval-intervalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval-intervalUITests.release.xcconfig"; path = "Target Support Files/Pods-interval-intervalUITests/Pods-interval-intervalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB124389F8C385EBE742D631 /* Pods-interval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval.release.xcconfig"; path = "Target Support Files/Pods-interval/Pods-interval.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				7381D4AB24D82459003C004F /* SceneDelegate.swift */,
 				7381D4AD24D82459003C004F /* ViewController.swift */,
 				7381D4AF24D82459003C004F /* Main.storyboard */,
+				7381D4D924E14909003C004F /* addSet.swift */,
 				7381D4B224D8245D003C004F /* Assets.xcassets */,
 				7381D4B424D8245D003C004F /* LaunchScreen.storyboard */,
 				7381D4B724D8245D003C004F /* Info.plist */,
@@ -165,7 +168,6 @@
 				1FD3C0B98E27E96797630396 /* Pods-intervalTests.debug.xcconfig */,
 				00EB0971543FDC164B9471A2 /* Pods-intervalTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7381D4DA24E14909003C004F /* addSet.swift in Sources */,
 				7381D4AE24D82459003C004F /* ViewController.swift in Sources */,
 				7381D4AA24D82459003C004F /* AppDelegate.swift in Sources */,
 				7381D4AC24D82459003C004F /* SceneDelegate.swift in Sources */,
