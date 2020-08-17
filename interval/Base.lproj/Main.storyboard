@@ -39,11 +39,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="login:" destination="S9m-eA-fCY" eventType="touchUpInside" id="mxJ-Qo-dN9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2R-nU-RFU">
+                                <rect key="frame" x="173" y="543" width="63" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="log out">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="S9m-eA-fCY" eventType="touchUpInside" id="hO1-aI-ywo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oGu-hq-KrN"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="izm-na-gaK" id="ZRN-JF-a1q"/>
+                        <outlet property="pass" destination="3UR-rZ-xXb" id="PiF-I6-vdT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhj-sc-Ncy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,15 +99,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signup:" destination="8o3-aZ-xIj" eventType="touchUpInside" id="dbo-aI-mM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-lG-zhB">
+                                <rect key="frame" x="140" y="814" width="134" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="go to login"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cgg-jN-k4g"/>
                     </view>
+                    <connections>
+                        <outlet property="passTF" destination="K4P-mu-fOK" id="xFD-9n-9zE"/>
+                        <outlet property="signupTF" destination="Y9K-m8-bLD" id="NEl-mX-DMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpU-4d-UBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417.39130434782612" y="-374.33035714285711"/>
+            <point key="canvasLocation" x="-386" y="-374"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SKk-CH-R1Y">

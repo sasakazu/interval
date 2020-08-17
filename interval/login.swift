@@ -7,14 +7,40 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class login: UIViewController {
 
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var pass: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
+    
+    @IBAction func login(_ sender: Any) {
+        
+        Auth.auth().signIn(withEmail: email.text!, password: pass.text!) { [weak self] authResult, error in
+            guard self != nil else { return }
+            
+        
+        }
+        print("sign in success!!")
+    }
+    
+    @IBAction func logout(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+    
+    }
+    
 }

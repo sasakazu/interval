@@ -8,6 +8,8 @@ target 'interval' do
 
   pod 'Firebase/Analytics'
   pod 'Firebase'
+  pod 'Firebase/Auth'
+
   
   target 'intervalTests' do
     inherit! :search_paths

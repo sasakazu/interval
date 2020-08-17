@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let currentUser = Auth.auth().currentUser
+        print("あなたのメールアドレス \(currentUser?.email!)")
         
     }
     
