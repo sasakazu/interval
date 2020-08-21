@@ -135,6 +135,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="インターバル" id="rFe-fs-M4t">
+                                        <barButtonItem key="leftBarButtonItem" title="Reset" id="FM6-x0-JOx">
+                                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="M3b-y7-Vwq">
                                             <connections>
                                                 <segue destination="cPO-hg-BZ5" kind="show" id="XUS-fp-n54"/>
@@ -151,7 +154,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0s-rt-Oqs">
-                                <rect key="frame" x="166" y="356" width="85" height="65"/>
+                                <rect key="frame" x="166" y="353" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <state key="normal" title="start"/>
