@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 class addSet: UIViewController {
 
@@ -24,8 +25,19 @@ class addSet: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        
-        
+        let db = Firestore.firestore()
+        // Add a new document in collection "cities"
+        db.collection("cities").document("LA").setData([
+            "name": "Los Angeles",
+            "state": "CA",
+            "country": "USA"
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
     }
     
     
