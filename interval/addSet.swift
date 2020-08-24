@@ -20,17 +20,20 @@ class addSet: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let currentUser = Auth.auth().currentUser
+        
     }
     
     @IBAction func save(_ sender: Any) {
+        
         let db = Firestore.firestore()
-        // Add a new document in collection "cities"
-        db.collection("cities").document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
+        let currentUser = Auth.auth().currentUser
+        
+        db.collection(currentUser!.uid).document("set").setData([
+            "setname": setnameTF.text!,
+            "setcount": "CA",
+            "interval": "USA"
         ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
