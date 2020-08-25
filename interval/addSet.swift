@@ -31,14 +31,19 @@ class addSet: UIViewController {
         let db = Firestore.firestore()
         let currentUser = Auth.auth().currentUser
         
-        // setcountをInt()に変更
+        // setcountをIntに変更
         let count:String = setCount.text!
         let nScount:Int = Int(count)!
+        
+        // intervalをintに変更
+        
+        let intervalcount:String = interval.text!
+        let nSinterval:Int = Int(intervalcount)!
               
         db.collection(currentUser!.uid).document("set").setData([
             "setname": setnameTF.text!,
             "setcount": nScount,
-            "interval": "USA"
+            "interval": nSinterval
         ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
