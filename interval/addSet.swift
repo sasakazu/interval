@@ -14,25 +14,30 @@ class addSet: UIViewController {
 
     
     @IBOutlet weak var setnameTF: UITextField!
-    @IBOutlet weak var setCount: UILabel!
-    @IBOutlet weak var intervalCount: UILabel!
+    @IBOutlet weak var setCount: UITextField!
+    @IBOutlet weak var interval: UITextField!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let currentUser = Auth.auth().currentUser
+    
         
     }
     
     @IBAction func save(_ sender: Any) {
-        
+
+        //CurrentUser
         let db = Firestore.firestore()
         let currentUser = Auth.auth().currentUser
         
+        // setcountをInt()に変更
+        let count:String = setCount.text!
+        let nScount:Int = Int(count)!
+              
         db.collection(currentUser!.uid).document("set").setData([
             "setname": setnameTF.text!,
-            "setcount": "CA",
+            "setcount": nScount,
             "interval": "USA"
         ]) { err in
             if let err = err {
