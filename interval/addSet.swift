@@ -49,6 +49,7 @@ class addSet: UIViewController {
                 print("Error writing document: \(err)")
             } else {
                 print("Document successfully written!")
+              
             }
         }
     }
