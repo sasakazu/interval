@@ -56,7 +56,11 @@ class addSet: UIViewController,UITextFieldDelegate {
                 print("Document successfully written!")
               
             }
+//        ルートに戻る
+            self.dismiss(animated: true, completion: nil)
+
         }
+
     }
     
     
@@ -65,7 +69,7 @@ class addSet: UIViewController,UITextFieldDelegate {
         dismiss(animated: true, completion: nil)
     }
  
-//    キーボードを閉じるアクション
+//    別のところタップでキーボードを閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            setnameTF.resignFirstResponder()
            setCount.resignFirstResponder()
