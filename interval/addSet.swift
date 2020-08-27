@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class addSet: UIViewController {
+class addSet: UIViewController,UITextFieldDelegate {
 
     
     @IBOutlet weak var setnameTF: UITextField!
@@ -22,6 +22,11 @@ class addSet: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+//        キーボード閉じる
+        setnameTF.delegate = self
+        setCount.delegate = self
+        interval.delegate = self
+        
         
     }
     
@@ -36,10 +41,10 @@ class addSet: UIViewController {
         let nScount:Int = Int(count)!
         
         // intervalをintに変更
-        
         let intervalcount:String = interval.text!
         let nSinterval:Int = Int(intervalcount)!
               
+//        name,setcout,intervalをfirebaseに追加
         db.collection(currentUser!.uid).document("set").setData([
             "setname": setnameTF.text!,
             "setcount": nScount,
@@ -56,7 +61,16 @@ class addSet: UIViewController {
     
     
     @IBAction func cancel(_ sender: Any) {
+//        戻るボタン
         dismiss(animated: true, completion: nil)
     }
+ 
+//    キーボードを閉じるアクション
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           setnameTF.resignFirstResponder()
+           setCount.resignFirstResponder()
+           interval.resignFirstResponder()
+                  
+       }
     
 }
