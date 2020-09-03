@@ -55,9 +55,11 @@ class ViewController: UIViewController {
             print("セット数：\(setcount!)")
             print("インターバル：\(interval!)")
             
-//          print("Current data: \(data)")
-        
+            let num1:Int = interval as! Int
+            let sNum1:String = String(num1)
+            
             self.setName.text = setname as? String
+            self.interval.text = sNum1 as? String
         
         }
         

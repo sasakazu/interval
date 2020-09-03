@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8yd-WK-P6w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8yd-WK-P6w">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -177,13 +177,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メニューネーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OK7-Ck-MH6">
-                                <rect key="frame" x="146" y="114" width="122" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メニューネーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OK7-Ck-MH6">
+                                <rect key="frame" x="96" y="114" width="221" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="122" id="1HA-t1-7G6"/>
-                                    <constraint firstAttribute="height" constant="21" id="uF2-LM-mvS"/>
+                                    <constraint firstAttribute="width" constant="221" id="1HA-t1-7G6"/>
+                                    <constraint firstAttribute="height" constant="35" id="uF2-LM-mvS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -204,13 +204,13 @@
                         <constraints>
                             <constraint firstItem="NnF-AT-BBD" firstAttribute="bottom" secondItem="rKL-X4-k5B" secondAttribute="bottom" id="01a-Eq-LWt"/>
                             <constraint firstItem="zrS-xg-uSt" firstAttribute="leading" secondItem="rKL-X4-k5B" secondAttribute="leading" id="3dq-XO-VUT"/>
-                            <constraint firstItem="OK7-Ck-MH6" firstAttribute="leading" secondItem="rKL-X4-k5B" secondAttribute="leading" constant="146" id="3ju-JG-Vdq"/>
+                            <constraint firstItem="OK7-Ck-MH6" firstAttribute="leading" secondItem="rKL-X4-k5B" secondAttribute="leading" constant="96" id="3ju-JG-Vdq"/>
                             <constraint firstItem="N0s-rt-Oqs" firstAttribute="top" secondItem="X1a-dj-evS" secondAttribute="bottom" constant="47" id="4kZ-dv-lif"/>
                             <constraint firstItem="rKL-X4-k5B" firstAttribute="trailing" secondItem="N0s-rt-Oqs" secondAttribute="trailing" constant="118" id="Cnb-vq-DHc"/>
                             <constraint firstItem="NnF-AT-BBD" firstAttribute="trailing" secondItem="rKL-X4-k5B" secondAttribute="trailing" id="J49-6a-bP7"/>
                             <constraint firstItem="rKL-X4-k5B" firstAttribute="trailing" secondItem="X1a-dj-evS" secondAttribute="trailing" constant="54" id="QGZ-On-VHG"/>
-                            <constraint firstItem="X1a-dj-evS" firstAttribute="top" secondItem="OK7-Ck-MH6" secondAttribute="bottom" constant="69" id="W3w-2P-9iA"/>
-                            <constraint firstItem="rKL-X4-k5B" firstAttribute="trailing" secondItem="OK7-Ck-MH6" secondAttribute="trailing" constant="146" id="Wct-La-FSg"/>
+                            <constraint firstItem="X1a-dj-evS" firstAttribute="top" secondItem="OK7-Ck-MH6" secondAttribute="bottom" constant="55" id="W3w-2P-9iA"/>
+                            <constraint firstItem="rKL-X4-k5B" firstAttribute="trailing" secondItem="OK7-Ck-MH6" secondAttribute="trailing" constant="97" id="Wct-La-FSg"/>
                             <constraint firstItem="NnF-AT-BBD" firstAttribute="top" secondItem="N0s-rt-Oqs" secondAttribute="bottom" constant="106" id="YaD-eD-NxK"/>
                             <constraint firstItem="N0s-rt-Oqs" firstAttribute="leading" secondItem="rKL-X4-k5B" secondAttribute="leading" constant="118" id="hjV-h9-fPf"/>
                             <constraint firstItem="OK7-Ck-MH6" firstAttribute="top" secondItem="zrS-xg-uSt" secondAttribute="bottom" constant="26" id="hwD-ul-h1E"/>
