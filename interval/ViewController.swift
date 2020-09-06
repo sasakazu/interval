@@ -10,8 +10,11 @@ import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    var item:[String] = ["１セット目","２セット目","３セット目","４セット目","５セット目","６セット目","７セット目","８セット目","９セット目","１０セット目",]
+    var count = 0
+    
     @IBOutlet weak var setName: UILabel!
     @IBOutlet weak var interval: UILabel!
     @IBOutlet weak var tableview: UITableView!
@@ -49,7 +52,9 @@ class ViewController: UIViewController {
             let setname = document["setname"]
             let setcount = document["setcount"]
             let interval = document["interval"]
-            
+
+            self.count = setcount as! Int
+
 //            プリントテスト
             print("セットネーム：\(setname!)")
             print("セット数：\(setcount!)")
@@ -65,10 +70,31 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
+
     @IBAction func start(_ sender: Any) {
     }
+
+    
+    
+//    ここからテーブルコード
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+             
+        cell.textLabel!.text = item[indexPath.row]
+              
+        return cell
+    
+    
+    
+    }
+    
+    
     
 
 }

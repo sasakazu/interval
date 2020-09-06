@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class login: UIViewController {
+class login: UIViewController,UITextFieldDelegate {
 
     
     @IBOutlet weak var email: UITextField!
@@ -19,6 +19,9 @@ class login: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        キーボード閉じる用
+        email.delegate = self
+        pass.delegate = self
         
     }
     
@@ -42,5 +45,14 @@ class login: UIViewController {
         }
     
     }
+    
+    
+    //    別のところタップでキーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           email.resignFirstResponder()
+           pass.resignFirstResponder()
+                  
+       }
+    
     
 }

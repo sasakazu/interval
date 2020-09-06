@@ -14,9 +14,7 @@ class addSet: UIViewController,UITextFieldDelegate {
 
     
     @IBOutlet weak var setnameTF: UITextField!
-    @IBOutlet weak var setCount: UITextField!
     @IBOutlet weak var interval: UITextField!
-    
     
     
     override func viewDidLoad() {
@@ -24,7 +22,6 @@ class addSet: UIViewController,UITextFieldDelegate {
     
 //        キーボード閉じる
         setnameTF.delegate = self
-        setCount.delegate = self
         interval.delegate = self
         
         
@@ -36,10 +33,6 @@ class addSet: UIViewController,UITextFieldDelegate {
         let db = Firestore.firestore()
         let currentUser = Auth.auth().currentUser
         
-        // setcountをIntに変更
-        let count:String = setCount.text!
-        let nScount:Int = Int(count)!
-        
         // intervalをintに変更
         let intervalcount:String = interval.text!
         let nSinterval:Int = Int(intervalcount)!
@@ -47,7 +40,6 @@ class addSet: UIViewController,UITextFieldDelegate {
 //        name,setcout,intervalをfirebaseに追加
         db.collection(currentUser!.uid).document("set").setData([
             "setname": setnameTF.text!,
-            "setcount": nScount,
             "interval": nSinterval
         ]) { err in
             if let err = err {
@@ -72,7 +64,6 @@ class addSet: UIViewController,UITextFieldDelegate {
 //    別のところタップでキーボードを閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            setnameTF.resignFirstResponder()
-           setCount.resignFirstResponder()
            interval.resignFirstResponder()
                   
        }
