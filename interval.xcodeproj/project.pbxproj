@@ -17,9 +17,9 @@
 		7381D4C124D8245D003C004F /* intervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4C024D8245D003C004F /* intervalTests.swift */; };
 		7381D4CC24D8245D003C004F /* intervalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4CB24D8245D003C004F /* intervalUITests.swift */; };
 		7381D4DA24E14909003C004F /* addSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7381D4D924E14909003C004F /* addSet.swift */; };
+		73D399F9251767BF00D00FFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D399F8251767BF00D00FFA /* GoogleService-Info.plist */; };
 		73FFF8E224E4F6E0005950FF /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FFF8E124E4F6E0005950FF /* login.swift */; };
 		73FFF8E424E4F70B005950FF /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FFF8E324E4F70B005950FF /* signup.swift */; };
-		73FFF8E624E4F8E7005950FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73FFF8E524E4F8E7005950FF /* GoogleService-Info.plist */; };
 		922AD1512AFD62E91417380E /* Pods_interval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEDC38E69CD10CB5576B6EE /* Pods_interval.framework */; };
 		C9472551C480BF7F735F14B8 /* Pods_intervalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A04EF46EC9AED72A24EC221 /* Pods_intervalTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,9 +63,9 @@
 		7381D4CB24D8245D003C004F /* intervalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervalUITests.swift; sourceTree = "<group>"; };
 		7381D4CD24D8245D003C004F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7381D4D924E14909003C004F /* addSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSet.swift; sourceTree = "<group>"; };
+		73D399F8251767BF00D00FFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73FFF8E124E4F6E0005950FF /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		73FFF8E324E4F70B005950FF /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
-		73FFF8E524E4F8E7005950FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9A8C52532B3556881710970 /* Pods_interval_intervalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_interval_intervalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF53FA5575B27EF32F662775 /* Pods-interval-intervalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval-intervalUITests.release.xcconfig"; path = "Target Support Files/Pods-interval-intervalUITests/Pods-interval-intervalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB124389F8C385EBE742D631 /* Pods-interval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-interval.release.xcconfig"; path = "Target Support Files/Pods-interval/Pods-interval.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				73FFF8E124E4F6E0005950FF /* login.swift */,
 				7381D4D924E14909003C004F /* addSet.swift */,
 				7381D4B224D8245D003C004F /* Assets.xcassets */,
-				73FFF8E524E4F8E7005950FF /* GoogleService-Info.plist */,
+				73D399F8251767BF00D00FFA /* GoogleService-Info.plist */,
 				7381D4B424D8245D003C004F /* LaunchScreen.storyboard */,
 				7381D4B724D8245D003C004F /* Info.plist */,
 			);
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7381D4B624D8245D003C004F /* LaunchScreen.storyboard in Resources */,
-				73FFF8E624E4F8E7005950FF /* GoogleService-Info.plist in Resources */,
+				73D399F9251767BF00D00FFA /* GoogleService-Info.plist in Resources */,
 				7381D4B324D8245D003C004F /* Assets.xcassets in Resources */,
 				7381D4B124D82459003C004F /* Main.storyboard in Resources */,
 			);
